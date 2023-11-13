@@ -14,14 +14,14 @@ export default function Home() {
 
   return (
     <Section>
-      <main className='flex space-x-1 justify-evenly px-10'>
-        <aside className='fixed bottom-12 left-4 flex-col space-y-4'>
+      <main className='flex space-x-1 justify-evenly px-10 '>
+        <aside className='fixed hidden md:block bottom-12 left-4 flex-col space-y-4'>
           <FaGithub className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
           <FaTwitter className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
           <FaInstagram className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
           <FaLinkedinIn className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
         </aside>
-        <aside className='flex flex-col'>
+        <aside className='flex flex-col px-3'>
           <section className='flex flex-col items-center justify-center gap-3 my-7 '>
             <Image className='rounded-full' src={"https://avatars.githubusercontent.com/u/120477045?v=4"} alt='teddy' height={200} width={200} />
             <motion.div className='space-x-2'
@@ -50,7 +50,9 @@ export default function Home() {
               </h3>
               <p className=' text-3xl md:text-6xl  text-center font-bold px-10'>I&apos;m Teddy  passionate Javascript fullstack developer. </p>
             </motion.div>
-            <Button color='secondary' className='mt-5'>Get in touch</Button>
+            <a href="mailto:onesamket@gmail.con" target="_blank" rel="noopener noreferrer">
+              <Button color='secondary' className='mt-5'>Get in touch</Button>
+            </a>
           </section>
 
           {/* skills  section  */}
