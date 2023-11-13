@@ -1,12 +1,12 @@
 "use client"
-import { Button, Spinner, } from '@nextui-org/react'
+import { Button, } from '@nextui-org/react'
 import Image from 'next/image';
 import Section from './Components/Section';
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6'
 import Prog from './Components/Progress';
 import { motion } from 'framer-motion'
 import ProjectCard from './Components/Card';
-import profile from '@/app/Asset/profile.png';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 export default function Home() {
 
@@ -14,14 +14,23 @@ export default function Home() {
 
   return (
     <Section>
-      <main className='flex space-x-1 justify-evenly px-10 '>
+      <main className='flex space-x-1 justify-between '>
         <aside className='fixed hidden md:block bottom-12 left-4 flex-col space-y-4'>
-          <FaGithub className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
-          <FaTwitter className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
-          <FaInstagram className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
-          <FaLinkedinIn className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
+          <a className='flex items-center justify-center p-1' href="http://github.com/onesamket" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
+          </a>
+          <a className='flex items-center justify-center p-1' href="http://x.com/onesamket" target="_blank" rel="noopener noreferrer">
+            <FaXTwitter className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
+          </a>
+          <a className='flex items-center justify-center p-1' href="http://instagram.com/1_onesamket" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
+
+          </a>
+          <a className='flex items-center justify-center p-1' href="http://linkedin.com/in/onesamket" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn className="text-xl transition-all duration-250 hover:translate-y-2 hover:text-blue-500 " />
+          </a>
         </aside>
-        <aside className='flex flex-col px-3'>
+        <aside className='flex flex-col px-3 w-full'>
           <section className='flex flex-col items-center justify-center gap-3 my-7 '>
             <Image className='rounded-full' src={"https://avatars.githubusercontent.com/u/120477045?v=4"} alt='teddy' height={200} width={200} />
             <motion.div className='space-x-2'
@@ -169,7 +178,6 @@ export default function Home() {
             &copy; All Rights Reserved
           </section>
         </aside>
-
       </main>
 
 

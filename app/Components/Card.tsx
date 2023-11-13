@@ -6,7 +6,7 @@ import { BsArrowUpRightSquare } from 'react-icons/bs';
 
 const ProjectCard = () => {
     return (
-        <main className='grid gap-3 place-content-center justify-center place-items-center md:grid-cols-2'>
+        <main className='grid gap-3  place-content-center justify-center place-items-center md:grid-cols-2  sm:gap-3'>
             {PROJECTS.map((pro, index) => (
 
                 <motion.div key={pro.content} className='bg-slate-100 dark:bg-slate-950 dark:text-slate-200  max-w-sm space-y-4 shadow-md rounded p-5 '
