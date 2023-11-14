@@ -22,7 +22,7 @@ export default function Header() {
     ];
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="border-b-1">
+        <Navbar onMenuOpenChange={setIsMenuOpen} className="border-b-1 dark:border-slate-500 w-screen shadow-sm">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}

@@ -22,14 +22,12 @@ export default function RootLayout({
         />
         <link rel="icon" href="profile.png" type="image/png" sizes="32x32" />
       </head>
-      <body className='w-full'>
+      <body className='w-screen px-auto'>
         <Providers>
           <header>
             <Header />
           </header>
-          <main>
-            {children}
-          </main>
+          {children}
         </Providers>
       </body>
     </html >
