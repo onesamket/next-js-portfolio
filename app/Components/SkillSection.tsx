@@ -8,7 +8,7 @@ const SkillSection = () => {
     return (
         <div>
             <section className='md:flex flex-col md:flex-row mx-auto justify-center items-center space-x-3 space-y-2   mn-h-[99vh] py-10 px-12 my-4' id='skills'>
-                <motion.div className='text-center md:w-1/2 lg:w-1/3'
+                <motion.div className='text-center md:w-1/2 xl:w-1/3'
                     initial={{
                         opacity: 0,
                     }}
@@ -31,7 +31,7 @@ const SkillSection = () => {
                     </div>
                 </motion.div>
                 {/* progress  */}
-                <motion.div className='md:w-1/2 lg:w-1/3  items-center '
+                <motion.div className='md:w-1/2 xl:w-1/3  items-center '
                     initial={{
                         opacity: 0,
                     }}
